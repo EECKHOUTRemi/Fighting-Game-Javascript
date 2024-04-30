@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="acceuil.css">
+    <title>Acceuil du Jeu</title>
+</head>
+<body>
+    
+    <video id="background-video" autoplay loop muted>
+
+        <source src="../Images/fond.mp4" type="video/mp4">
+        
+    </video>
+
+    <h1>Bienvenue dans mon jeu !</h1>
+    <p>Les règles sont simples :</p>
+    <ul>
+        <li>Il y a 4 boutons :</li>
+        <ul>
+            <li id="att">Attaque : Permet d'attaquer l'adversaire avec des dégats compris entre 10 et 20 pv</li>
+            <li id="def">Défense : Permet de bloquer la prochaine attaque subie au prochain tour de l'adversaire (non cumulable)</li>
+            <li id="boost">Boost d'attaque : Permet de doubler son attaque au prochain tour (utilisable qu'une seule fois)</li>
+            <li id="soins">Soins : Permet de se soigner de 20 pv (utilisable qu'une seule fois)</li>
+        </ul>
+
+        <br>
+        <li>Le jeu se joue au tour par tour</li>
+
+        <br>
+        <li>Le premier personnage à ne plus avoir de points de vie meurt, son adversaire à donc gagné</li>
+
+        <br>
+        <li>Le personnage qui commmence est défini aléatoirement</li>
+
+        <br>
+        <li>ATTENTION : pour une meilleure experience de jeu, veuillez mettre la page en plein écran (F11 pour Windows)</li>
+    </ul>
+
+    <a href="jeu.html">Pour jouer cliquez ici</a>
+
+</body>
+</html>

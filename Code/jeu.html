@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="jeu.css">
+    <title>Jeu</title>
+</head>
+<body>
+
+    <video id="background-video" autoplay loop muted>
+
+        <source src="../Images/fond.mp4" type="video/mp4">
+        
+    </video>
+
+    <div class="container">
+
+        <a href="index.html" id="retourRegles">← Retour aux règles du jeu (la partie sera perdue)</a>
+
+        <div class="infosAlien">
+
+            <p class="name">L'Alien</p>
+
+            <input type="text" id="pvAlien" readonly="true">
+            <input type="text" class="degatsSubis degatsAlien" readonly="true" >
+            
+            <img src="../Images/alien.png" alt="alien" id="Alien">
+            <img src="../Images/poing.png" alt="Coup de Poing" id="poing">
+
+            <div class="buttonsAlien">
+                <button class="btn btnAttAlien">Griffure<br>(attaque)</button>
+                <button class="btn btnDefAlien">Durcissement de la peau<br>(défense)</button>
+            </div>
+
+            <div class="consommables">
+                <button class="btn btnBoostAlien">Aiguisages des griffes<br>(x2 attaque)</button>
+                <button class="btn btnPotAlien">Reconstitution<br>(+20pv)</button>
+            </div>
+            
+        </div>
+        
+        <div class="infosAstronaute">
+            
+            <p class="name">L'Astronaute</p>
+            
+            <input type="text" id="pvAstro" readonly="true">
+            <input type="text" class="degatsSubis degatsAstro" readonly="true" >
+
+            <img src="../Images/astronaute.png" alt="astronaute" id="Astro">
+            <img src="../Images/griffes.jpg" alt="Coup de Griffe" id="griffe">
+            
+            <div class="buttonsAstronaute">
+                <button class="btn btnAttAstro">Coup de poing<br>(attaque)</button>
+                <button class="btn btnDefAstro">Ésquive<br>(défense)</button>
+            </div>
+
+            <div class="consommables">
+                <button class="btn btnBoostAstro">Poing Américain<br>(x2 attaque)</button>
+                <button class="btn btnPotAstro">Bandage<br>(+20pv)</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
